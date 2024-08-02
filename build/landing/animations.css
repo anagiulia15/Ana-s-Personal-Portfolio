@@ -1,0 +1,62 @@
+/*
+    Border Animations -> Projects
+ */
+
+.border-animated {
+    --c: rgb(94 234 212); /* the border color */
+    --b: 2px;    /* the border thickness*/
+    --g: 25px;     /* the gap on hover */
+
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background:
+            conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+            var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+            conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+            0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+}
+.border-animated:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+}
+
+/*
+    Credit to Temani Afif https://codepen.io/t_afif/pen/xxpRrOG
+ */
+
+
+/*
+    Text-Animations -> Projects
+ */
+
+.animated-text
+{
+    background-image: linear-gradient(
+            -225deg,
+            rgb(94, 234, 212) 0%,
+            rgb(128, 255, 230) 29%,
+            rgb(162, 255, 248) 67%,
+            rgb(196, 255, 255) 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/*
+    Credit to Alvaro https://codepen.io/alvarotrigo/pen/PoKMyNO
+ */

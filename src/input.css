@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page-background-color{
+    background-color: rgb(15 23 42);
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.icons{
+    font-size: 1.6rem;
+}
+
+.cursor{
+    position: absolute;
+    min-width: 600px;  /* Width of the gradient */
+    min-height: 600px; /* Height of the gradient */
+    border-radius: 50%; /* Makes it circular */
+    pointer-events: none; /* So it doesn’t block clicks */
+    background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 60%);
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: opacity 0.4s ease; /* Optional: for a smooth fade-in/out */
+    opacity: 0; /* Initially hidden */
+    overflow: hidden;
+}
+
+.active .nav-indicator{
+    width: 4rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.active .nav-text{
+    --tw-text-opacity: 1;
+    color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.button-background-color{
+    background-color: #0F172A;
+}
+
+/* Media Queries for the cursor*/
+
+@media(min-width: 640px){
+    .cursor {
+        top:0;
+        left:0;
+        width: 800px;  /* Width of the gradient */
+        height: 800px; /* Height of the gradient */
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media(min-width: 768px){
+    .cursor {
+        top:0;
+        left:0;
+        width: 800px;  /* Width of the gradient */
+        height: 800px; /* Height of the gradient */
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cursor {
+        width: 800px;  /* Width of the gradient */
+        height: 800px; /* Height of the gradient */
+        visibility: visible;
+    }
+}
