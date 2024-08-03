@@ -22,5 +22,5 @@ def replace_line(file_path, target_line, replacement_line):
         print(f"An error occurred: {e}")
 
 
-replace_line("./build/landing/index.html", '<link rel="stylesheet" href="./styles.css" />',
+replace_line("./_includes/sections/head.html", '<link rel="stylesheet" href="./styles.css" />',
              '<link rel="stylesheet" href="./output.css" />')

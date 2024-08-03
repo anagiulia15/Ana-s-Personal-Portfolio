@@ -690,10 +690,6 @@ video {
   scroll-margin-top: 6rem;
 }
 
-.list-disc {
-  list-style-type: disc;
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1170,10 +1166,6 @@ body{
     text-align: center;
   }
 
-  .sm\:text-right {
-    text-align: right;
-  }
-
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1215,10 +1207,6 @@ body{
 
   .lg\:mb-4 {
     margin-bottom: 1rem;
-  }
-
-  .lg\:mb-40 {
-    margin-bottom: 10rem;
   }
 
   .lg\:mt-0 {
@@ -1265,10 +1253,6 @@ body{
     .lg\:lg\:scroll-mt-32 {
       scroll-margin-top: 8rem;
     }
-  }
-
-  .lg\:list-none {
-    list-style-type: none;
   }
 
   .lg\:flex-col {
