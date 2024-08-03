@@ -20,10 +20,11 @@
 
 title: Ana's Portfolio
 email: sebasandres0694@gmail.com
+domain: my-site.github.io
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal portfolio where I showcase my projects and skills.
-baseurl: "/ana-portfolio.html" # the subpath of your site, e.g. /blog
-url: "https://s-andres0694.github.io/Ana-s-Personal-Portfolio/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Ana-s-Personal-Portfolio/portfolio" # the subpath of your site, e.g. /blog
+url: "https://s-andres0694.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
