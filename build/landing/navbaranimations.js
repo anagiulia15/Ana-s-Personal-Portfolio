@@ -23,5 +23,5 @@ function setupNavbarAnimation(SectionId, NavId) {
 }
 
 setupNavbarAnimation('About', 'about-nav');
-setupNavbarAnimation('Education', 'education-nav');
+setupNavbarAnimation('Professional Experience', 'education-nav');
 setupNavbarAnimation('Projects', 'projects-nav');
