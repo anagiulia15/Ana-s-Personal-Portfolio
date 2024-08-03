@@ -41,8 +41,8 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 
-exclude: [vendor]
 exclude:
+  - vendor
   - Gemfile
   - Gemfile.lock
   - node_modules
