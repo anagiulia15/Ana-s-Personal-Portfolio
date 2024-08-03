@@ -1,29 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="selection:bg-teal-300 selection:text-teal-900">
-
-<head>
+  <head>
     <!-- meta tags for the page -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./animations.css" />
 
     <!-- icons for the webpage -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/icons/favicon-16x16.png"
+    />
 
     <!-- Links for the fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Links for the icons -->
-    <script src="https://kit.fontawesome.com/eaf0e737bf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/eaf0e737bf.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Links for the JS -->
 
@@ -33,328 +50,460 @@
     <!-- Title of the page -->
 
     <title>Personal Portfolio Page | Holder</title>
-</head>
+  </head>
 
-<body id="body"
-    class="page-background-color lg:overflow-x-hidden lg:overflow-y-scroll overflow-x-hidden overflow-y-scroll">
+  <body
+    id="body"
+    class="page-background-color lg:overflow-x-hidden lg:overflow-y-scroll overflow-x-hidden overflow-y-scroll"
+  >
     <!-- main container that declares all of the necessary style for the responsiveness of the page -->
     <div id="cursor"></div>
     <div
-        class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24 lg:flex lg:justify-between lg:gap-4">
-        <!-- header section that contains the personal details of the user -->
+      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24 lg:flex lg:justify-between lg:gap-4"
+    >
+      <!-- header section that contains the personal details of the user -->
 
-        <header>
-            <section id="personal-details"
-                class="flex flex-col lg:w-1/3 lg:fixed lg:justify-between lg:h-screen lg:pb-20">
-                <div id="profile" class="flex flex-col items-start space-y-4">
-                    <h1 class="text-4xl sm:text-5xl font-bold text-teal-300 text-left">
-                        Ana Giulia <br> Azanedo
-                    </h1>
-                    <h2 class="text-lg font-medium text-slate-100 text-left">
+      <header>
+        <section
+          id="personal-details"
+          class="flex flex-col lg:w-1/3 lg:fixed lg:justify-between lg:h-screen lg:pb-20"
+        >
+          <div id="profile" class="flex flex-col items-start space-y-4">
+            <h1 class="text-4xl sm:text-5xl font-bold text-teal-300 text-left animated-text">
+              Ana Giulia <br />
+              Azanedo
+            </h1>
+            <h2 class="text-lg font-medium text-slate-100 text-left"></h2>
+            <p
+              class="text-md font-light text-slate-100 tracking-wide text-left text-wrap whitespace-normal pr-20 max-w-sm"
+            >
+              Technically minded and solutions-oriented individual with a robust
+              foundation in HTML, CSS, JavaScript, React, and Node.js.
+            </p>
+            <nav class="hidden lg:block self-start">
+              <ul class="mt-10 w-max">
+                <li>
+                  <a
+                    id="about-nav"
+                    href="#About"
+                    class="group flex items-center py-3"
+                  >
+                    <span
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
+                    ></span>
+                    <span
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >About</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    id="education-nav"
+                    href="#Professional Experience"
+                    class="group flex items-center py-3"
+                  >
+                    <span
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
+                    ></span>
+                    <span
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >Professional Experience</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    id="projects-nav"
+                    href="#Projects"
+                    class="group flex items-center py-3"
+                  >
+                    <span
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
+                    ></span>
+                    <span
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >Projects</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex justify-self-end mt-8 lg:mb-24">
+            <ul class="flex gap-6 self-center items-center">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ana-giulia-aza%C3%B1edo-517197227/"
+                  class="text-slate-400 hover:text-teal-300"
+                >
+                  <i class="icons fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/anagiulia15"
+                  class="text-slate-400 hover:text-teal-300"
+                >
+                  <i class="icons fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </header>
 
-                    </h2>
+      <!-- main section that contains the about me details of the user -->
+
+      <main class="lg:w-1/2 mt-24 lg:mt-0">
+        <!-- about me section -->
+
+        <section id="About" class="scroll-mt-24">
+          <h2
+            class="text-sm font-bold text-slate-300 lg:hidden tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20"
+          >
+            About Me
+          </h2>
+          <p
+            class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:mt-0 lg:text-justify leading-relaxed"
+          >
+            Skilled at creating interactive and cross-platform web applications,
+            with key projects including user profile pages and travel websites.
+            Ability to implement media queries for creating adaptable web
+            layouts across devices.
+          </p>
+          <p
+            class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:text-justify leading-relaxed"
+          >
+            I am seeking a challenging role that will allow me to leverage my
+            analytical skills and technical proficiencies. My goal is to create
+            exceptional user experiences through innovative and efficient web
+            solutions. With a focus on both functionality and aesthetics, I am
+            dedicated to delivering high-quality web applications that meet the
+            diverse needs of users.
+          </p>
+        </section>
+        <section id="Professional Experience" class="lg:mb-36 scroll-mt-20">
+          <h2
+            class="text-sm font-bold text-slate-300 lg:hidden mt-36 tracking-widest uppercase w-full sticky top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6"
+          >
+            Professional Experience
+          </h2>
+          <div class="flex flex-col gap-20 lg:gap-32 mt-6 lg:mt-40">
+            <!-- first education element -->
+
+            <div>
+              <div class="flex flex-row gap-24 lg:justify-between">
+                <p class="lg:text-sm text-base text-slate-300 font-light">
+                  2015 - Currently
+                </p>
+                <div class="items-end flex flex-col">
+                  <div
+                    class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end"
+                  >
+                    <h3
+                      class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0"
+                    >
+                      Munpec Sac
+                    </h3>
+                    <p class="text-base text-slate-300 font-light text-right">
+                      Administrative Assistant
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <ul>
+                <li
+                  class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4 list-disc lg:list-none"
+                >
+                  Attained approvals and minimized issues, while serving as the
+                  primary point of contact with government agencies.
+                </li>
+                <li
+                  class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4 list-disc lg:list-none"
+                >
+                  Met and maintained compliance with foreign trade policies and
+                  procedures by implementing internal controls.
+                </li>
+                <li
+                  class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4 list-disc lg:list-none"
+                >
+                  Developed and administered comprehensive and accurate records
+                  of all foreign trade transactions.
+                </li>
+              </ul>
+            </div>
+
+            <!-- second education element -->
+
+            <div>
+              <div class="flex flex-row gap-24 lg:justify-between">
+                <p class="lg:text-sm text-base text-slate-300 font-light">
+                  Feb 2024 - Jul 2024
+                </p>
+                <div class="justify-between items-end flex flex-col">
+                  <div
+                    class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end"
+                  >
+                    <h3
+                      class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0"
+                    >
+                      Tripleten
+                    </h3>
                     <p
-                        class="text-md font-light text-slate-100 tracking-wide text-left text-wrap whitespace-normal pr-20 max-w-sm">
-                        Technically minded and solutions-oriented individual with a robust foundation in HTML, CSS,
-                        JavaScript, React, and Node.js.
+                      class="text-base text-slate-300 font-light text-right sm:text-right"
+                    >
+                      Front-End Developer Bootcamp
                     </p>
-                    <nav class="hidden lg:block self-start">
-                        <ul class="mt-10 w-max">
-                            <li>
-                                <a id="about-nav" href="#About" class="group flex items-center py-3">
-                                    <span
-                                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-                                    <span
-                                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="education-nav" href="#Professional Experience"
-                                    class="group flex items-center py-3">
-                                    <span
-                                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-                                    <span
-                                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Professional
-                                        Experience</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a id="projects-nav" href="#Projects" class="group flex items-center py-3">
-                                    <span
-                                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-                                    <span
-                                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                  </div>
                 </div>
-                <div class="flex justify-self-end mt-8 lg:mb-24">
-                    <ul class="flex gap-6 self-center items-center">
-                        <li>
-                            <a href="https://www.linkedin.com/in/ana-giulia-aza%C3%B1edo-517197227/"
-                                class="text-slate-400 hover:text-teal-300">
-                                <i class="icons fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/anagiulia15" class="text-slate-400 hover:text-teal-300">
-                                <i class="icons fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
+              </div>
+              <p
+                class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal"
+              >
+                Completed coursework that includes comprehensive studies in Data
+                Structures, HTML & CSS, JavaScript, React, and Node.js. These
+                subjects were taught by experienced tutors from Mexico,
+                Argentina, and Colombia, who provided valuable insights and
+                diverse perspectives on web development and programming.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="Projects" class="scroll-mt-20">
+          <h2
+            class="text-sm font-bold text-slate-300 lg:hidden mt-36 tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20 mb-6"
+          >
+            Projects
+          </h2>
+          <!-- first project element -->
+
+          <div class="container flex flex-col gap-20 lg:gap-32">
+            <div class="flex flex-col gap-6 border-animated">
+              <div class="flex gap-10 items-start">
+                <img
+                  class="lg:w-44 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
+                  src="./img/website-image-2.png"
+                  alt="Image of a built project"
+                />
+                <div class="flex flex-col gap-2">
+                  <h3
+                    class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text"
+                  >
+                    Coffee Shop Web Project
+                  </h3>
+                  <p
+                    class="text-base text-slate-200 font-normal text-right lg:text-justify"
+                  >
+                    Created a Cafeteria Page, including videos with recipes for
+                    preparing different coffees. A menu was included with the
+                    various types of drinks and food offered, and a form was
+                    added to make reservations.
+                  </p>
                 </div>
-            </section>
-        </header>
+              </div>
+              <div
+                class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center"
+              >
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  CSS
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  HTML
+                </button>
+              </div>
+              <div class="flex gap-4 justify-center">
+                <a
+                  href="https://github.com/anagiulia15/web_project_coffeeshop?tab=readme-ov-file#the-coffee-shop-en-tripleten"
+                  class="text-slate-200 hover:text-teal-300"
+                  >View Code</a
+                >
+              </div>
+            </div>
 
-        <!-- main section that contains the about me details of the user -->
+            <!-- second project element -->
 
-        <main class="lg:w-1/2 mt-24 lg:mt-0">
-            <!-- about me section -->
-
-            <section id="About" class="scroll-mt-24">
-                <h2
-                    class="text-sm font-bold text-slate-300 lg:hidden tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20">
-                    About Me
-                </h2>
-                <p
-                    class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:mt-0 lg:text-justify leading-relaxed">
-                    Skilled at creating interactive and cross-platform web applications, with key
-                    projects including user profile pages and travel websites. Ability to implement media queries for
-                    creating adaptable web layouts across devices.
-                </p>
-                <p class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:text-justify leading-relaxed">
-                    I am seeking a challenging role that will allow me to leverage my analytical skills and technical
-                    proficiencies. My goal is to create exceptional user experiences through innovative and efficient
-                    web
-                    solutions. With a focus on both functionality and aesthetics, I am dedicated to delivering
-                    high-quality
-                    web applications that meet the diverse needs of users.
-                </p>
-            </section>
-            <section id="Professional Experience" class="lg:mb-36 scroll-mt-20">
-                <h2
-                    class="text-sm font-bold text-slate-300 lg:hidden mt-36 tracking-widest uppercase w-full sticky top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
-                    Professional Experience
-                </h2>
-                <div class="flex flex-col gap-20 lg:gap-32 mt-6 lg:mt-40">
-                    <!-- first education element -->
-
-                    <div>
-                        <div class="flex flex-row gap-24 lg:justify-between">
-                            <p class="lg:text-sm text-base text-slate-300 font-light">
-                                2015 - Currently
-                            </p>
-                            <div class="items-end flex flex-col">
-                                <div
-                                    class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end">
-                                    <h3
-                                        class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0">
-                                        Munpec Sac
-                                    </h3>
-                                    <p class="text-base text-slate-300 font-light text-right ">
-                                        Administrative Assistant
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <ul>
-                            <li
-                                class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4 list-disc lg:list-none">
-                                Attained approvals and minimized issues, while serving as the primary point of contact
-                                with government agencies.
-                            </li>
-                            <li
-                                class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4 list-disc lg:list-none ">
-                                Met and maintained compliance with foreign trade policies and procedures by implementing
-                                internal controls.
-                            </li>
-                            <li
-                                class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4 list-disc lg:list-none">
-                                Developed and administered comprehensive and accurate records of all foreign trade
-                                transactions.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- second education element -->
-
-                    <div>
-                        <div class="flex flex-row gap-24 lg:justify-between">
-                            <p class="lg:text-sm text-base text-slate-300 font-light">
-                                Feb 2024 - Jul 2024
-                            </p>
-                            <div class="justify-between items-end flex flex-col">
-                                <div
-                                    class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end">
-                                    <h3
-                                        class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0">
-                                        Tripleten
-                                    </h3>
-                                    <p class="text-base text-slate-300 font-light text-right sm:text-right">
-                                        Front-End Developer Bootcamp
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal">
-                            Completed coursework that includes comprehensive studies in Data Structures, HTML & CSS,
-                            JavaScript, React, and
-                            Node.js. These subjects were taught by experienced tutors from Mexico, Argentina, and
-                            Colombia,
-                            who provided valuable insights and diverse perspectives on web development and programming.
-                        </p>
-                    </div>
-
-
+            <div class="flex flex-col gap-6 border-animated">
+              <div class="flex gap-10 items-start">
+                <img
+                  class="lg:w-44 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
+                  src="./img/website-image-1.png"
+                  alt="Image of a built project"
+                />
+                <div class="flex flex-col gap-2">
+                  <h3
+                    class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text"
+                  >
+                    Photo Gallery Website
+                  </h3>
+                  <p
+                    class="text-base text-slate-200 font-normal text-right lg:text-justify"
+                  >
+                    A photo gallery website that allows users to update the
+                    images displayed on the page.
+                  </p>
                 </div>
-            </section>
-            <section id="Projects" class="scroll-mt-20">
-                <h2
-                    class="text-sm font-bold text-slate-300 lg:hidden mt-36 tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
-                    Projects
-                </h2>
-                <!-- first project element -->
+              </div>
+              <div
+                class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center"
+              >
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Figma
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  HTML
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  CSS
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Git (Version Control)
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  JavaScript
+                </button>
+              </div>
+              <div class="flex gap-4 justify-center">
+                <a
+                  href="https://anagiulia15.github.io/web_project_around/"
+                  class="text-slate-200 hover:text-teal-300"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/anagiulia15/web_project_around"
+                  class="text-slate-200 hover:text-teal-300"
+                  >View Code</a
+                >
+              </div>
+            </div>
 
-                <div class="container flex flex-col gap-20 lg:gap-32">
-                    <div class="flex flex-col gap-6 border-animated">
-                        <div class="flex gap-10 items-start">
-                            <img class="lg:w-44 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
-                                src="./img/website-image-2.png" alt="Image of a built project" />
-                            <div class="flex flex-col gap-2">
-                                <h3 class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text">
-                                    Coffee Shop Web Project
-                                </h3>
-                                <p class="text-base text-slate-200 font-normal text-right lg:text-justify">
-                                    Created a Cafeteria Page, including videos with recipes for
-                                    preparing different coffees. A menu was included with the various types of drinks
-                                    and
-                                    food offered, and a form was added to make reservations.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center">
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                CSS
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                HTML
-                            </button>
-                        </div>
-                        <div class="flex gap-4 justify-center">
-                            <a href="https://github.com/anagiulia15/web_project_coffeeshop?tab=readme-ov-file#the-coffee-shop-en-tripleten"
-                                class="text-slate-200 hover:text-teal-300">View Code</a>
-                        </div>
-                    </div>
+            <!-- third project element -->
 
-                    <!-- second project element -->
-
-                    <div class="flex flex-col gap-6 border-animated">
-                        <div class="flex gap-10 items-start">
-                            <img class="lg:w-44 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
-                                src="./img/website-image-1.png" alt="Image of a built project" />
-                            <div class="flex flex-col gap-2">
-                                <h3 class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text">
-                                    Photo Gallery Website
-                                </h3>
-                                <p class="text-base text-slate-200 font-normal text-right lg:text-justify">
-                                    A photo gallery website that allows users to update the images displayed on the page.                        
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center">
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                Figma
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                HTML
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                CSS
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                Git (Version Control)   
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                        </div>
-                        <div class="flex gap-4 justify-center">
-                            <a href="https://anagiulia15.github.io/web_project_around/" class="text-slate-200 hover:text-teal-300">View Project</a>
-                            <a href="https://github.com/anagiulia15/web_project_around" class="text-slate-200 hover:text-teal-300">View Code</a>
-                        </div>
-                    </div>
-
-                    <!-- third project element -->
-
-                    <div class="flex flex-col gap-6 border-animated">
-                        <div class="flex gap-10 items-start">
-                            <img class="lg:w-44 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
-                                src="./img/12-Types-of-Websites-Examples-january-2021.jpg"
-                                alt="Image of a built project" />
-                            <div class="flex flex-col gap-2">
-                                <h3 class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text">
-                                    Project Title
-                                </h3>
-                                <p class="text-base text-slate-200 font-normal text-right lg:text-justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nullam nec purus ac libero ultrices.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center">
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                            <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
-                                JavaScript
-                            </button>
-                        </div>
-                        <div class="flex gap-4 justify-center">
-                            <a href="" class="text-slate-200 hover:text-teal-300">View Project</a>
-                            <a href="" class="text-slate-200 hover:text-teal-300">View Code</a>
-                        </div>
-                    </div>
+            <div class="flex flex-col gap-6 border-animated">
+              <div class="flex gap-10 items-start">
+                <img
+                  class="lg:w-44 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
+                  src="./img/website-image-3.png"
+                  alt="Image of a built project"
+                />
+                <div class="flex flex-col gap-2">
+                  <h3
+                    class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text"
+                  >
+                    Homeland Homepage Project
+                  </h3>
+                  <p
+                    class="text-base text-slate-200 font-normal text-right lg:text-justify"
+                  >
+                    A website with a description of several countries and
+                    representative images. This website features a responsive
+                    design through Media Queries and Flexbox.
+                  </p>
                 </div>
-            </section>
-            <hr class="border-2 border-teal-400 mt-6 w-64 items-center mx-auto hidden lg:block" />
-            <footer>
-                <div class="flex justify-between mt-12 lg:mt-2 gap-4 text-teal-300 rounded-xl py-4 flex-col">
-                    <p class="text-slate-200 text-center">
-                        <a href="mailto:randomemail@email.com?subject=Interested in your services&body=I hope this message finds you well. My name is , and I recently came across your personal website. I was impressed by it and I wanted to talk to you about..."
-                            class="text-teal-300 hover:text-teal-200">Contact me!</a>
-                    </p>
-                    <div class="flex-col flex gap-4">
-                        <p class="text-slate-400 font-light text-center">
-                            Designed using
-                            <span class="font-bold text-slate-100">Tailwind CSS, Node.js and JavaScript</span>
-                        </p>
-                        <p class="text-slate-400 font-light text-center">
-                            Credits to
-                            <a href="https://github.com/bchiang7"
-                                class="hover:text-teal-200 text-slate-200 font-bold">Brittany Chiang</a>
-                            for the original design.
-                        </p>
-                    </div>
-                </div>
-            </footer>
-        </main>
+              </div>
+              <div
+                class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center"
+              >
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Figma
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  HTML
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  CSS
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Flexbox
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Git (Version Control)
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Grid Layout
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Flexbox
+                </button>
+                <button
+                  class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+                >
+                  Media Queries
+                </button>
+              </div>
+              <div class="flex gap-4 justify-center">
+                <a href="https://anagiulia15.github.io/web_project_homeland/" class="text-slate-200 hover:text-teal-300"
+                  >View Project</a
+                >
+                <a href="https://github.com/anagiulia15/web_project_homeland" class="text-slate-200 hover:text-teal-300"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr
+          class="border-2 border-teal-400 mt-6 w-64 items-center mx-auto hidden lg:block"
+        />
+        <footer>
+          <div
+            class="flex justify-between mt-12 lg:mt-2 gap-4 text-teal-300 rounded-xl py-4 flex-col"
+          >
+            <p class="text-slate-200 text-center">
+              <a
+                href="mailto:anaazanedo09@gmail.com?subject=Interested in your services&body=I hope this message finds you well. My name is , and I recently came across your personal website. I was impressed by it and I wanted to talk to you about..."
+                class="text-teal-300 hover:text-teal-200"
+                >Contact me!</a
+              >
+            </p>
+            <div class="flex-col flex gap-4">
+              <p class="text-slate-400 font-light text-center">
+                Designed using
+                <span class="font-bold text-slate-100"
+                  >Tailwind CSS, Node.js and JavaScript</span
+                >
+              </p>
+              <p class="text-slate-400 font-light text-center">
+                Credits to
+                <a
+                  href="https://github.com/bchiang7"
+                  class="hover:text-teal-200 text-slate-200 font-bold"
+                  >Brittany Chiang</a
+                >
+                for the original design.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </main>
     </div>
-</body>
-
+  </body>
 </html>
