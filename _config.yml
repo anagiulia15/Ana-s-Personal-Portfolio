@@ -50,3 +50,6 @@ exclude:
   - src
   - .gitignore
   - postcss.config.js
+  - README.md
+  - runner.py
+  - postcss.config.js
