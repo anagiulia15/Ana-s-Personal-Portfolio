@@ -83,6 +83,18 @@
               </ul>
             </nav>
           </div>
+          <h2 class="text-lg font-medium text-slate-100 mt-8 text-left">Skills</h2>
+          <div
+            class="flex-row lg:flex-col flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
+          >
+            {% for tech in page.skills %}
+            <button
+              class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+            >
+              {{ tech }}
+            </button>
+            {% endfor %}
+          </div>
           <div class="flex justify-self-end mt-8 lg:mb-24">
             <ul class="flex gap-6 self-center items-center">
               <li>

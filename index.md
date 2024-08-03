@@ -2,6 +2,13 @@
 layout: portfolio
 title: Ana's Portfolio
 
+skills:
+  - HTML
+  - CSS
+  - Figma
+  - JavaScript
+  - React.js
+
 professional-experience:
   - company: Munpec Sac
     date: 2015 - Currently
