@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en" class="selection:bg-teal-300 selection:text-teal-900">
-
   {% include sections/head.html %}
 
   <body
@@ -26,7 +25,9 @@
               Ana Giulia <br />
               Azanedo
             </h1>
-            <h2 class="text-lg font-medium text-slate-100 text-left">Front-End Developer</h2>
+            <h2 class="text-lg font-medium text-slate-100 text-left">
+              Front-End Developer
+            </h2>
             <p
               class="text-md font-light text-slate-100 tracking-wide text-left text-wrap whitespace-normal pr-20 max-w-sm"
             >
@@ -84,18 +85,20 @@
             </nav>
           </div>
           <div class="flex flex-col gap-4 lg:mb-24">
-          <h2 class="text-lg font-medium text-slate-100 mt-8 text-left">Skills</h2>
-          <div
-            class="flex-row lg:flex-col flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
-          >
-            {% for tech in page.skills %}
-            <button
-              class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+            <h2 class="text-lg font-medium text-slate-100 mt-8 text-left">
+              Skills
+            </h2>
+            <div
+              class="flex-row lg:flex-col flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
             >
-              {{ tech }}
-            </button>
-            {% endfor %}
-          </div>
+              {% for tech in page.skills %}
+              <button
+                class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm"
+              >
+                {{ tech }}
+              </button>
+              {% endfor %}
+            </div>
           </div>
           <div class="flex justify-self-end mt-8 lg:mb-24">
             <ul class="flex gap-6 self-center items-center">
@@ -134,8 +137,11 @@
           <p
             class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:mt-0 lg:text-justify leading-relaxed"
           >
-            Skilled at creating interactive and cross-platform web applications,
-            with key projects including user profile pages and travel websites.
+            <span class="font-bold"
+              >Skilled at creating interactive and cross-platform web
+              applications, with key projects including user profile pages and
+              travel websites.</span
+            >
             Ability to implement media queries for creating adaptable web
             layouts across devices.
           </p>
@@ -145,9 +151,12 @@
             I am seeking a challenging role that will allow me to leverage my
             analytical skills and technical proficiencies. My goal is to create
             exceptional user experiences through innovative and efficient web
-            solutions. With a focus on both functionality and aesthetics, I am
-            dedicated to delivering high-quality web applications that meet the
-            diverse needs of users.
+            solutions.
+            <span class="font-bold"
+              >With a focus on both functionality and aesthetics, I am dedicated
+              to delivering high-quality web applications that meet the diverse
+              needs of users.</span
+            >
           </p>
         </section>
         <section id="Professional Experience" class="lg:mb-36 scroll-mt-20">
@@ -157,7 +166,6 @@
             Professional Experience
           </h2>
           <div class="flex flex-col gap-20 lg:gap-32 mt-6 lg:mt-40">
-
             {% for job in page.professional-experience %}
 
             <!-- first education element -->
@@ -174,7 +182,7 @@
                     <h3
                       class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0"
                     >
-                      {{ job.company }} 
+                      {{ job.company }}
                     </h3>
                     <p class="text-base text-slate-300 font-light text-right">
                       {{ job.position }}
@@ -182,9 +190,13 @@
                   </div>
                 </div>
               </div>
-              {% for paragraph in job.description  %}
-              <p class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4">{{ paragraph }}</p>
-                {% endfor %}
+              {% for paragraph in job.description %}
+              <p
+                class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4"
+              >
+                {{ paragraph }}
+              </p>
+              {% endfor %}
             </div>
             {% endfor %}
           </div>
@@ -203,7 +215,7 @@
             <div class="flex flex-col gap-6 border-animated">
               <div class="flex gap-10 items-start">
                 <img
-                  class="lg:w-44 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
+                  class="lg:w-52 w-32 md:w-36 h-auto rounded-md border-2 border-teal-400"
                   src="{{ project.image }}"
                   alt="Image of a built project"
                 />
@@ -242,12 +254,8 @@
             </div>
 
             {% endfor %}
-
           </div>
         </section>
-        <hr
-          class="border-2 border-teal-400 mt-6 w-64 items-center mx-auto hidden lg:block"
-        />
         <footer>
           <div
             class="flex justify-between mt-12 lg:mt-2 gap-4 text-teal-300 rounded-xl py-4 flex-col"

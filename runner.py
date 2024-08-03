@@ -1,4 +1,5 @@
 def replace_line(file_path, target_line, replacement_line):
+    result = False
     try:
         # Read the contents of the file
         with open(file_path, 'r') as file:
@@ -9,11 +10,13 @@ def replace_line(file_path, target_line, replacement_line):
             for line in lines:
                 if line.strip() == target_line:
                     file.write(replacement_line + '\n')
-                    print(f"Successfully replaced '{target_line}' with '{replacement_line}' in {file_path}")
-                    SystemExit(0)
+                    result = True
                 else:
                     file.write(line)
-
+                    
+        if result:
+            print(f"Successfully replaced '{target_line}' with '{replacement_line}' in {file_path}")
+        else: 
             print("The replacement could not be done")
 
     except FileNotFoundError:
@@ -22,5 +25,5 @@ def replace_line(file_path, target_line, replacement_line):
         print(f"An error occurred: {e}")
 
 
-replace_line("./_includes/sections/head.html", '<link rel="stylesheet" href="./styles.css" />',
-             '<link rel="stylesheet" href="./output.css" />')
+replace_line("./_includes/sections/head.html", '<link rel="stylesheet" href="./assets/CSS/styles.css" />',
+             '<link rel="stylesheet" href="./assets/CSS/output.css" />')
